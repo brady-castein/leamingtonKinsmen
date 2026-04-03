@@ -34,3 +34,69 @@
     height: 80px;
     object-fit: contain;
 }
+
+.main-header {
+    background-color: #fff;
+    border-top: 20px solid #e74c3c;
+    border-bottom: 20px solid #e74c3c;
+    padding: 25px 40px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;           
+    position: relative;
+    gap: 80px;                         
+}
+
+.logo-large {
+    flex-shrink: 0;
+    height: 200px;
+    margin-left: -650px;                 
+}
+
+.logo-large img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-text-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 620px;
+    pointer-events: none;
+}
+
+.header-text {
+    pointer-events: auto;
+}
+
+.header-text h1 {
+    font-size: 42px;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+}
+
+.header-text .highlight {
+    color: #e74c3c;
+}
+
+.tagline {
+    font-size: 26px;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
