@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav {
+    background-color: #f4b5b5;
+    padding: 0;
+}
+
+.nav-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    flex: 1;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+.logo-small img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.main-header {
+    background-color: #fff;
+    border-top: 20px solid #e74c3c;
+    border-bottom: 20px solid #e74c3c;
+    padding: 25px 40px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;           
+    position: relative;
+    gap: 80px;                         
+}
+
+.logo-large {
+    flex-shrink: 0;
+    height: 200px;
+    margin-left: -650px;                 
+}
+
+.logo-large img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-text-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 620px;
+    pointer-events: none;
+}
+
+.header-text {
+    pointer-events: auto;
+}
+
+.header-text h1 {
+    font-size: 42px;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+}
+
+.header-text .highlight {
+    color: #e74c3c;
+}
+
+.tagline {
+    font-size: 26px;
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    border-left: 5px solid #e74c3c;
+    padding-left: 15px;
+}
+
+.highlight {
+    color: #e74c3c;
+}
+
+.event-card {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    overflow: hidden;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.event-image img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.event-details h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.gallery-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.gallery-grid img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.main-footer {
+    background-color: #f4b5b5;
+    border-top: 2px solid #e0a0a0;
+    padding: 14px 24px;
+}
+
+.footer-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer-kinsmen {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.82rem;
+    color: #333;
+    flex: 1;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: auto;
+    margin-left: -15px;
+}
+
+.footer-brand img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    font-size: 0.82rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.burger-menu {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
