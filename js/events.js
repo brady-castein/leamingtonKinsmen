@@ -1,18 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    document.querySelector('.burger-menu').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('open');
+    });
+
     const images = document.querySelectorAll('.gallery-grid img');
     const nextBtn = document.getElementById('nextBtn');
     const prevBtn = document.getElementById('prevBtn');
-    const visibleCount = 3;
     let currentIndex = 0;
 
+    function getVisibleCount() {
+        return window.innerWidth <= 768 ? 1 : 3;
+    }
+
     function updateGallery() {
+        const visibleCount = getVisibleCount();
         images.forEach((img, i) => {
             img.style.display = (i >= currentIndex && i < currentIndex + visibleCount) ? 'block' : 'none';
         });
     }
 
     nextBtn.onclick = function () {
-        if (currentIndex + visibleCount < images.length) {
+        if (currentIndex + getVisibleCount() < images.length) {
             currentIndex++;
             updateGallery();
         }
@@ -24,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
             updateGallery();
         }
     };
+
+    window.addEventListener('resize', updateGallery);
 
     updateGallery();
 });
