@@ -155,10 +155,22 @@ body {
     margin: 0;
 }
 
+.event-details h4{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
 .gallery-wrapper {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.gallery-scroll-container {
+    flex: 1;
 }
 
 .gallery-grid {
