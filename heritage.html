@@ -10,14 +10,24 @@
 <body>
 
   <!-- navbar -->
-  <nav>
-    <img class="nav-logo" src="assets/Kin_Canada_Logo.svg.png" alt="Leamington Kinsmen logo" />
-    <div class="nav-links">
-      <a href="home.html">Home</a>
-      <a href="heritage.html">Heritage</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
-    </div>
+  <nav class="top-nav">
+      <div class="nav-container">
+          <div class="logo-small">
+              <img src="kincanada.png" alt="Kinsmen Logo">
+          </div>
+          <button class="burger-menu" type="button" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+          <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="heritage.html">Heritage</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="member.html">Member Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
   </nav>
 
   <!-- top stripe -->
@@ -92,14 +102,18 @@
   </div>
 
   <!-- footer -->
-  <footer>
-    <img src="assets/Kin_Canada_Logo.svg.png" alt="Leamington Kinsmen logo" />
-    <div class="brand">Leamington <span>Kinsmen</span></div>
-    <div class="footer-links">
-      <a href="#">Top of <span>Page</span></a>
-      <a href="#">Home</a>
-      <a href="#">Kin <span>Canada</span></a>
-    </div>
+  <footer class="main-footer">
+      <div class="footer-inner">
+          <div class="footer-brand">
+              <img src="kincanada.png" alt="Kinsmen Logo">
+              <div class="brand">Leamington <span>Kinsmen</span></div>
+          </div>
+          <div class="footer-links">
+              <a href="#">Top of <span>Page</span></a>
+              <a href="home.html">Home</a>
+              <a href="https://kincanada.ca/">Kin <span>Canada</span></a>
+          </div>
+      </div>
   </footer>
 
 </body>
