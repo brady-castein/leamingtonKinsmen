@@ -248,13 +248,7 @@ body {
     text-decoration: underline;
 }
 
-.footer-brand .brand span {
-    color: red;
-}
 
-.footer-links a span {
-    color: #EF3C30;
-}
 
 .burger-menu {
     display: none;
