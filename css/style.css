@@ -444,7 +444,7 @@ body {
         margin: 0;
         z-index: 5;
     }
-
+    
     .footer-kinsmen {
         display: none;
     }
@@ -453,6 +453,14 @@ body {
         height: 50px;
         width: auto;
         margin-left: -55px;
+    }
+
+    .footer-brand span {
+        color: #EF3C30;
+    }
+
+    .footer-brand .brand {
+        display: none;
     }
 
     .footer-links {
@@ -472,6 +480,10 @@ body {
         text-decoration: none;
         color: #333;
         white-space: nowrap;
+    }
+
+    .footer-links a span {
+        color: #EF3C30;
     }
 
     .burger-menu{
