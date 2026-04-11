@@ -1,0 +1,259 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red: #EF3C30;
+  --red-light: rgba(239, 60, 48, 0.22);
+  --red-mid: rgba(239, 60, 48, 0.30);
+  --red-strong: rgba(239, 60, 48, 0.50);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1E1E1E;
+  background: #fff;
+}
+
+a { color: inherit; }
+
+/* nav */
+nav {
+  background: var(--red-mid);
+  border-bottom: 1px solid #D9D9D9;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav img.nav-logo {
+  width: clamp(13px, 7vw, 70px);
+  height: auto;
+}
+
+nav .nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+}
+
+nav .nav-links a:hover { color: var(--red); }
+
+/* stripes */
+.stripe { height: 28px; background: var(--red); }
+
+/* banner  */
+header.banner {
+  padding: 40px 60px 32px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+}
+
+header.banner img {
+  width: clamp(30px, 10vw, 123px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+header.banner .banner-text h1 {
+  font-size: clamp(20px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.1;
+  min-width: 0;
+}
+
+header.banner .banner-text h1 span { color: var(--red); }
+
+header.banner .banner-text p {
+  font-size: clamp(13px, 4vw, 28px);
+  font-weight: 300;
+  font-style: italic;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* quote */
+.quote {
+  background: rgba(243, 244, 246, 0.88);
+  padding: 24px 60px;
+  text-align: center;
+}
+
+.quote p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--red);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* heritge  */
+.heritage-blob {
+  text-align: center;
+  padding: 48px 60px 32px;
+}
+
+.heritage-blob h2 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+}
+
+.heritage-blob h2 span { color: var(--red); }
+
+/* about */
+section.about {
+  padding: 48px 60px;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about h2 span { color: var(--red); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-grid .founder {
+  text-align: center;
+}
+
+.about-grid .founder img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.about-grid .founder p {
+  font-size: 12px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.about-grid .founder p a { text-decoration: underline; }
+
+.about-grid .founder .founder-name {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 6px;
+}
+
+.about-body {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+}
+
+.about-body a { text-decoration: underline; }
+
+.about-grid .crest-img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* members */
+.member-band {
+  background: var(--red-light);
+  padding: 14px 60px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+/* milestone / mission */
+section.highlights {
+  padding: 48px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.highlights .block h3 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.highlights .block h3 span { color: var(--red); }
+
+.highlights .block p {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+}
+
+.highlights .mission { text-align: right; }
+
+/* leaarn more */
+.learn-band {
+  background: var(--red-light);
+  padding: 12px 60px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.learn-band a {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+/* sponsors */
+.sponsors {
+  display: flex;
+  gap: 16px;
+  padding: 16px 60px;
+  justify-content: space-between;
+}
+
+.sponsors img {
+  max-width: 48%;
+  height: auto;
+}
+
+/* footer */
+footer {
+  background: var(--red-strong);
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+}
+
+footer img { width: 60px; height: auto; }
+
+footer .footer-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-links a { font-size: 18px; }
+footer .footer-links a span { color: var(--red); }
+
+footer .brand {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+footer .brand span { color: var(--red); }
