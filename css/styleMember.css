@@ -1,0 +1,303 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(243, 244, 246, 0.49);
+  font-family: Inter, sans-serif;
+}
+
+/* nav */
+nav {
+  background: var(--red-mid);
+  border-bottom: 1px solid #D9D9D9;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav img.nav-logo {
+  width: 70px;
+  height: auto;
+}
+
+nav .nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+}
+
+.red-stripe {
+  width: 100%;
+  height: 28px;
+  background: #EF3C30;
+}
+
+nav .nav-links a:hover { color: var(--red); }
+
+/* ===== HERO ===== */
+.hero-section {
+  background: white;
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  width: 140px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.hero-title .black { color: black; }
+.hero-title .red   { color: #FF0000; }
+
+.hero-tagline {
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-family: Inter, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: black;
+  margin-top: 8px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  max-width: 1200px;
+  margin: 32px auto;
+  background: white;
+  border: 1px solid #E5E7EB;
+  padding: 32px 48px 48px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.section-title .dark { color: #1F2937; }
+.section-title .red  { color: #EF3C30; }
+
+.section-subtitle {
+  color: #6B7280;
+  font-size: 18px;
+  font-family: 'Instrument Sans', sans-serif;
+  margin-bottom: 32px;
+}
+
+/* ===== RESOURCE CARD GRID ===== */
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.resource-card {
+  border: 1px solid #E5E7EB;
+  padding: 24px 28px;
+}
+
+.resource-card.members  { background: #FFF8F3; }
+.resource-card.meeting  { background: #F7FBFF; }
+.resource-card.district { background: #F8FFF8; }
+
+.card-title {
+  font-size: 26px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-title .dark  { color: #1F2937; }
+.card-title .red   { color: #EF3C30; }
+.card-title .black { color: black; }
+
+/* ===== RESOURCE ITEMS ===== */
+.resource-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.resource-item:last-child { margin-bottom: 0; }
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background: #C62828;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+.item-link {
+  display: block;
+  color: #2563EB;
+  font-size: 19px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.item-link:hover { text-decoration: underline; }
+
+.item-desc {
+  display: block;
+  color: #6B7280;
+  font-size: 14px;
+  font-family: 'Inria Sans', sans-serif;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+/* District card two-column layout */
+.district-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.district-card {
+  background: #F8FFF8;
+  border: 1px solid #E5E7EB;
+  padding: 24px 28px;
+}
+
+.find-more-card {
+  background: #F8FFF8;
+  border: 1px solid #E5E7EB;
+  padding: 24px 28px;
+}
+
+.find-more-label {
+  font-size: 22px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 16px;
+}
+
+.kin-canada-link .dark {
+  color: #1F2937;
+  font-size: 20px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.kin-canada-link .red {
+  color: #EF3C30;
+  font-size: 20px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ===== CTA CARD ===== */
+.card-cta {
+  background: #FAF5F5;
+  border: 1px solid #ECD0D0;
+  padding: 24px 28px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.cta-heading {
+  color: #C62828;
+  font-size: 22px;
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cta-subtext {
+  color: #6B7280;
+  font-size: 13px;
+  font-family: 'Instrument Sans', sans-serif;
+  margin-bottom: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #C62828;
+  color: white;
+  font-size: 13px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  padding: 14px 48px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+.footer-bar {
+  width: 100%;
+  background: rgba(239, 60, 48, 0.50);
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.footer-logo {
+  width: 56px;
+  height: auto;
+}
+
+.footer-club-name .black { color: #0C0C0C; font-size: 15px; font-family: Inter, sans-serif; }
+.footer-club-name .red   { color: #EF3C30;  font-size: 15px; font-family: Inter, sans-serif; }
+
+.footer-links {
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a,
+.footer-links span {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-links a.red { color: #EF3C30; }
+.footer-links a:hover { text-decoration: underline; }
+
+.footer-page-label {
+  width: 100%;
+  text-align: center;
+  color: #F7E8E6;
+  font-size: 14px;
+  font-family: 'Inria Serif', serif;
+  margin-top: 4px;
+}

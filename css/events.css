@@ -248,8 +248,16 @@ body {
     text-decoration: underline;
 }
 
+.footer-brand .brand span {
+    color: red;
+}
+
+.footer-links a span {
+    color: #EF3C30;
+}
+
 .burger-menu {
-    display: none; 
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -413,6 +421,10 @@ body {
         align-items: center;
         margin: 0;
         z-index: 5;
+    }
+
+    .footer-brand .brand {
+        display: none;
     }
 
     .footer-kinsmen {
